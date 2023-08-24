@@ -15,7 +15,6 @@ model = DistilBertForTokenClassification.from_pretrained('distilbert-base-uncase
 label_map = {"First name": 0, "Last name": 1}
 
 # Define Your Training, Validation, and Test Data Here
-# Define Your Training, Validation, and Test Data Here
 training_examples = [
     ("Chris Stansbury", [("Chris", "First name"), ("Stansbury", "Last name")]),
     ("America Ferrera", [("America", "First name"), ("Ferrera", "Last name")]),
@@ -54,8 +53,6 @@ test_examples = [
     ("Matt Damon", [("Matt", "First name"), ("Damon", "Last name")]),
     ("Cate Blanchett", [("Cate", "First name"), ("Blanchett", "Last name")]),
 ]
-
-# ... Rest of the code remains the same ...
 
 # Tokenize Data
 def tokenize_data(data):
